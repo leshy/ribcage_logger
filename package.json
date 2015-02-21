@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/leshy/ribcage_logger.git"
   },
+  "dependencies": {
+    "logger2": "git://github.com/leshy/nodejs-logger2"
+  }
   "author": "lesh",
   "license": "ISC",
   "bugs": {
