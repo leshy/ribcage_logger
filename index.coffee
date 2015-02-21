@@ -1,5 +1,5 @@
 backbone = require 'backbone4000'
-Logger = require 'logger2'
+Logger = require 'nodejs-logger2'
 _ = require 'underscore'
 
 exports.lego = backbone.Model.extend4000 
