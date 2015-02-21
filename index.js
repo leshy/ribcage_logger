@@ -12,15 +12,10 @@
     init: function(callback) {
       var logger;
       console.log('initializing logger...');
-      logger = this.logger = new Logger.Logger();
-      if (!this.settings.outputs) {
-        logger.outputs.push(new Logger.Console());
-      } else {
-        _.map(this.settings.outputs, function(value, name) {
-          logger.outputs.push(new Logger[name](value));
-          return console.log(name, 'output', value);
-        });
-      }
+      _.map(this.settings.outputs, function(value, name) {
+        return console.log(name, 'output', value);
+      });
+      logger = this.logger = new Logger.Logger(this.settings);
       this.env.log = logger.log.bind(logger);
       return callback();
     }
