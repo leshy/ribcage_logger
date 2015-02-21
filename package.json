@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "logger2": "git://github.com/leshy/nodejs-logger2"
-  }
+  },
   "author": "lesh",
   "license": "ISC",
   "bugs": {
