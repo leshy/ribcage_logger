@@ -11,7 +11,7 @@
     "url": "https://github.com/leshy/ribcage_logger.git"
   },
   "dependencies": {
-    "nodejs-logger2": "git://github.com/leshy/nodejs-logger2"
+    "logger2": "git://github.com/leshy/nodejs-logger2"
   },
   "author": "lesh",
   "license": "ISC",
