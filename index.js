@@ -11,7 +11,6 @@
   exports.lego = backbone.Model.extend4000({
     init: function(callback) {
       var logger;
-      console.log('initializing logger...');
       _.map(this.settings.outputs, function(value, name) {
         return console.log(name, 'output', value);
       });
