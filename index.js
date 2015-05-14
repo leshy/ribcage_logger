@@ -4,7 +4,7 @@
 
   backbone = require('backbone4000');
 
-  Logger = require('logger2');
+  Logger = require('logger3');
 
   _ = require('underscore');
 
