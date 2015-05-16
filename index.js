@@ -15,7 +15,7 @@
         return console.log(name, 'output', value);
       });
       logger = this.env.logger = this.logger = new Logger.Logger(this.settings);
-      this.env.log = logger.log.bind(logger);
+      this.env.log = logger;
       return callback();
     }
   });
