@@ -4,18 +4,16 @@
 
   backbone = require('backbone4000');
 
-  Logger = require('logger3');
+  Logger = require('logger3/server');
 
   _ = require('underscore');
 
   exports.lego = backbone.Model.extend4000({
     init: function(callback) {
       var logger;
-      _.map(this.settings.outputs, function(value, name) {
-        return console.log(name, 'output', value);
-      });
       logger = this.env.logger = this.logger = new Logger.Logger(this.settings);
-      this.env.log = logger;
+      this.env.l = logger;
+      this.env.log = logger.log.bind(logger);
       return callback();
     }
   });
