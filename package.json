@@ -11,7 +11,10 @@
     "url": "https://github.com/leshy/ribcage_logger.git"
   },
   "dependencies": {
-    "logger3": "git://github.com/leshy/logger3"
+    "logger3": "git://github.com/leshy/logger3",
+    "underscore": "^1.8.3",
+    "backbone4000": "git://github.com/leshy/backbone4000.git"
+
   },
   "author": "lesh",
   "license": "ISC",
